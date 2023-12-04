@@ -6,8 +6,9 @@
     npx expo install @react-native-community/slider
     npx expo install expo-clipboard
     npx expo install @react-native-async-storage/async-storage
-    npx expo install @react-navigation/native
+    npm install @react-navigation/native
     npx expo install react-native-screens react-native-safe-area-context
+    npm install @react-navigation/bottom-tabs
 
 
 # rodar o projeto
