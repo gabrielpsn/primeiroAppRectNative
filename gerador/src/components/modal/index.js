@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native"
 import * as Clipboard from 'expo-clipboard'
-import { useStorage } from '../../hooks/useStorage'
+import useStorage from '../../hooks/useStorage'
  
 export default function ModalPassword({password, handleClose}) {
 
@@ -26,7 +26,7 @@ export default function ModalPassword({password, handleClose}) {
                     <TouchableOpacity style={style.button} onPress={handleClose}>
                         <Text style={style.buttonText}>Voltar</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={[style.button, style.buttonSave]}>
+                    <TouchableOpacity style={[style.button, style.buttonSave]}  onPress={handleCopyPassword}>
                         <Text style={style.buttonSaveText}>Salvar Senha</Text>
                     </TouchableOpacity>
                 </View>
